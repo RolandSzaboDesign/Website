@@ -71,7 +71,7 @@ body {
 	display: grid;
 	width: 100vw;
 	height: 100vh;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-family: "Red Hat Text", sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -140,6 +140,10 @@ body {
 		margin-left: -5rem;
 		border: .5rem solid white;
 	}
+}
+
+.logo::selection {
+	background-color: transparent;
 }
 
 .main {
@@ -225,8 +229,8 @@ body {
 
 @media only screen and (max-width: 991px) {
 	.subtitle {
-		font-size: 4rem;
-		letter-spacing: -2px;
+		font-size: 3rem;
+		letter-spacing: -1.5px;
 	}
 }
 
@@ -239,8 +243,19 @@ body {
 }
 
 .text {
-	margin-bottom: 3rem;
 	text-shadow: 0 .25rem .5rem rgba(0,0,0,.75), 0 .125rem .125rem rgba(0,0,0,.5);
+}
+
+@media only screen and (max-width: 991px) {
+	.text {
+		margin-bottom: 2rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.text {
+		margin-bottom: 3rem;
+	}
 }
 
 .btn {
@@ -276,4 +291,8 @@ body {
 .btn:hover,
 .btn:focus {
 	background-color: rgba(255,255,255,1);
+}
+
+.btn::selection {
+	background-color: transparent;
 }
