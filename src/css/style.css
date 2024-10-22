@@ -39,18 +39,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
 	font-family: 'Red Hat Text';
+	font-display: swap;
 	font-weight: 300;
 	src: url(../webfonts/RedHatText-Light.woff2) format('woff2');
 }
 
 @font-face {
 	font-family: 'Red Hat Text';
+	font-display: swap;
 	font-weight: 600;
 	src: url(../webfonts/RedHatText-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
 	font-family: 'Red Hat Text';
+	font-display: swap;
 	font-weight: 700;
 	src: url(../webfonts/RedHatText-Bold.woff2) format('woff2');
 }
