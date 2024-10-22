@@ -37,7 +37,23 @@ address, cite, var { font-style: italic; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
+@font-face {
+	font-family: 'Red Hat Text';
+	font-weight: 300;
+	src: url(../webfonts/RedHatText-Light.woff2) format('woff2');
+}
 
+@font-face {
+	font-family: 'Red Hat Text';
+	font-weight: 600;
+	src: url(../webfonts/RedHatText-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Red Hat Text';
+	font-weight: 700;
+	src: url(../webfonts/RedHatText-Bold.woff2) format('woff2');
+}
 
 ::selection {
 	background-color: #222;
@@ -201,7 +217,7 @@ body {
 
 .subtitle {
 	font-weight: 700;
-	text-shadow: 0 .25rem 2rem rgba(0,0,0,.5), 0 .125rem .5rem black;
+	text-shadow: 0 .25rem 2rem rgba(0,0,0,.5), 0 .125rem .5rem rgba(0,0,0,.5);
 }
 
 @media only screen and (max-width: 991px) {
@@ -221,7 +237,7 @@ body {
 
 .text {
 	margin-bottom: 3rem;
-	text-shadow: 0 .25rem .5rem black, 0 .125rem .125rem black;
+	text-shadow: 0 .25rem .5rem rgba(0,0,0,.75), 0 .125rem .125rem rgba(0,0,0,.5);
 }
 
 .btn {
